@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "NMonkey Image Replacer",
+    "version": "1.0",
+    "description": "Replaces all images on the page with images of monkeys",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["scrip.js"]
+        }
+    ],
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
